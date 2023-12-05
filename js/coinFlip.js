@@ -119,7 +119,7 @@ function fillNewArray(toNumber) {
     return newCountsArray;
 }
 
-///////////////Radios
+//Radios
 
 let firstEncounter = document.querySelector("#firstEncounter");
 let thirdEncounter = document.querySelector("#thirdEncounter");
