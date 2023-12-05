@@ -118,3 +118,21 @@ function fillNewArray(toNumber) {
 
     return newCountsArray;
 }
+
+///////////////Radios
+
+let firstEncounter = document.querySelector("#firstEncounter");
+let thirdEncounter = document.querySelector("#thirdEncounter");
+let thirdRowEncounter = document.querySelector("#thirdRowEncounter");
+
+firstEncounter.addEventListener("click", function () {
+    stopChoice = STOP_FLIPPING_ENUM.CoatOfArmsOnce;
+});
+
+thirdEncounter.addEventListener("click", function () {
+    stopChoice = STOP_FLIPPING_ENUM.CoatOfArmsThreeTimes;
+});
+
+thirdRowEncounter.addEventListener("click", function () {
+    stopChoice = STOP_FLIPPING_ENUM.CoatOfArmsThreeTimesInRown;
+});
