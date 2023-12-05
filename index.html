@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BIT Javascript Loops introduction</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="m-5 p-5 shadow-xl rounded-xl flex flex-col gap-3">
+            <h1 class="text-center text-2xl font-bold text-blue-500">
+                Square draw algorthim
+            </h1>
+            <section
+                class="rounded-xl shadow-inner bg-gray-50 p-5 flex flex-col gap-5"
+            >
+                <div class="flex flex-col justify-center items-center">
+                    <div
+                        class="text-2xl-gap w-min bg-orange-500 text-white py-5 pl-6 rounded hidden"
+                        id="square-draw-canvas"
+                    ></div>
+                </div>
+                <div class="text-right">
+                    <button
+                        type="button"
+                        class="shadow-lg bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                        id="square-draw-btn"
+                    >
+                        <div class="hover:scale-110 py-1 px-4">Draw Square</div>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <button
+                        type="button"
+                        class="shadow-lg bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                        id="square-border-btn"
+                    >
+                        <div class="hover:scale-110 py-1 px-4">Draw Border</div>
+                    </button>
+                </div>
+            </section>
+            <h1 class="text-center text-2xl font-bold text-blue-500">
+                Coin flip algorithm!
+            </h1>
+            <section
+                class="rounded-xl shadow-inner bg-gray-50 p-5 flex flex-col gap-5"
+            >
+                <h2 class="text-center text-xl font-bold text-blue-500">
+                    Stop flipping when:
+                </h2>
+                <form action="" id="quiz-form" class="flex flex-col gap-5">
+                    <div class="fields flex flex-col gap-3">
+                        <input
+                            type="radio"
+                            name="stopFlippingChoice"
+                            id="firstEncounter"
+                        /><label for="firstEncounter"
+                            >Encountered coat of arms</label
+                        >
+                    </div>
+                    <div class="fields flex flex-col gap-3">
+                        <input
+                            type="radio"
+                            name="stopFlippingChoice"
+                            id="thirdEncounter"
+                        /><label for="thirdEncounter"
+                            >Encountered three times coat of arms</label
+                        >
+                    </div>
+                    <div class="fields flex flex-col gap-3">
+                        <input
+                            type="radio"
+                            name="stopFlippingChoice"
+                            id="thirdRowEncounter"
+                        /><label for="thirdRowEncounter"
+                            >Encountered three times in row coat of arms</label
+                        >
+                    </div>
+                    <div class="text-right">
+                        <button
+                            type="button"
+                            class="shadow-lg bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                            id="coin-flip-btn"
+                        >
+                            <div class="hover:scale-110 py-1 px-4">Start</div>
+                        </button>
+                    </div>
+                    <div class="text-right">
+                        <button
+                            type="button"
+                            class="shadow-lg bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                            id="coin-flip-stop-btn"
+                        >
+                            <div class="hover:scale-110 py-1 px-4">Stop</div>
+                        </button>
+                    </div>
+                    <div
+                        class="text-white p-2 max-h-40 overflow-y-auto bg-gradient-to-br rounded text-lg font-semibold hidden"
+                        id="coin-flip-results"
+                    ></div>
+                </form>
+            </section>
+        </main>
+        <script src="js/general.js"></script>
+        <script src="js/squareDraw.js"></script>
+        <script src="js/coinFlip.js"></script>
+    </body>
+</html>
